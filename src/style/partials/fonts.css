@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'ArnoPro';
+    src: local('Arno Pro'), local('ArnoPro-Regular'),
+    url('../fonts/ArnoPro-Regular.woff2') format('woff2'),
+    url('../fonts/ArnoPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue'), local('BebasNeu'),
+    url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+    url('../fonts/BebasNeueRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
