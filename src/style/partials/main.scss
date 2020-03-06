@@ -1,6 +1,8 @@
 $font1: "ArnoPro", sans-serif;
 $font2: "Bebas Neue", "ArnoPro", sans-serif;
 $resolution: 1097;
+$resolution2: 712;
+
 
 a{
 	text-decoration: none;
@@ -19,7 +21,6 @@ body{
 	font-size: 1vw;
 	color: #FFFFFF;
 	background:none transparent;
-	background: url("../images/bg.jpg") center center no-repeat;
 }
 
 .radio{
@@ -53,7 +54,7 @@ body{
 				left: 50%;
 				top: 50%;
 				transform: translateX(-50%) translateY(-50%);
-				box-shadow: 0 0 0.54695vw 5px #d6232787;
+				box-shadow: 0 0 0.54695vw vw(5) #d6232787;
 			}
 		}
 	}
@@ -63,7 +64,6 @@ body{
 	&__title{
 		color: #ffffff;
 		font-size: vw(24);
-		line-height: vw(72);
 		text-transform: uppercase;
 		text-align: center;
 	}
@@ -207,5 +207,113 @@ body{
 	}
 	&__share{
 		margin-top: vw(40);
+	}
+}
+
+
+@media all and (max-width: 750px) {
+
+	.radio{
+		$self: &;
+		&__checkbox{
+			width: vw2(36);
+			height: vw2(36);
+			left: vw2(-68);
+			top: vw2(5);
+		}
+		input{
+			&:checked ~ #{$self}__checkbox{
+				&::after{
+					width: vw2(16);
+					height: vw2(16);
+					box-shadow: 0 0 0.54695vw vw2(5) #d6232787;
+				}
+			}
+		}
+	}
+
+	.share{
+		&__title{
+			font-size: vw2(24);
+		}
+		&__socials{
+			margin-top: vw2(25);
+		}
+		&__soc-link{
+			border-radius: vw2(4);
+			margin: 0 vw2(8);
+			width: vw2(48);
+			height: vw2(48);
+			svg{
+				width: vw2(30);
+				height: vw2(30);
+			}
+		}
+	}
+
+	.test{
+		padding-bottom: 0;
+		&__inner{}
+		&__flex{
+			flex-direction: column;
+			align-items: center;
+		}
+		&__count{
+			font-size: vw2(92);
+			margin-right: vw2(37);
+			padding-top: 0;
+			justify-content: center;
+		}
+		&__question{
+			font-size: vw2(30);
+			line-height: vw2(32);
+		}
+		&__variants{
+			margin-top: vw2(50);
+			padding-left: vw2(125);
+			padding-right: vw2(60);
+		}
+		&__variant{
+			min-height: vw2(35);
+
+			+.test__variant{
+				margin-top: vw2(25);
+			}
+		}
+		&__answer{
+			font-size: vw2(22);
+			line-height: vw2(26);
+			letter-spacing: vw2(0.55);
+		}
+		&__btns{
+			position: static;
+			margin-top: vw2(65);
+		}
+		&__btn{
+			width: vw2(344);
+			height: vw2(77);
+			font-size: vw2(47);
+			border-radius: vw2(50);
+			border: none;
+		}
+		&__test{
+			padding: vw2(65) vw2(40) vw2(65);
+		}
+		&__results{
+			box-sizing: border-box;
+			padding: vw2(75) vw2(50) vw2(60);
+		}
+		&__title{
+			font-size: vw2(60);
+		}
+		&__itogo{
+			margin-top: vw2(50);
+			width: vw2(500);
+			font-size: vw2(24);
+			line-height: vw2(28);
+		}
+		&__share{
+			margin-top: vw2(40);
+		}
 	}
 }
