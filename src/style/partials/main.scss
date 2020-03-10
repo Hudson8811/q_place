@@ -104,7 +104,13 @@ body{
 	padding-bottom: vw(37);
 	box-sizing: border-box;
 	width: 100%;
+	&__preview{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 	&__inner{
+		display: none;
 		box-sizing: border-box;
 		width: 100%;
 		border: 2px solid #d62327;
@@ -176,6 +182,11 @@ body{
 		transition: 0.3s;
 		&:hover{
 			border-color: #d62327;
+		}
+		&_auto{
+			width: auto !important;
+			padding-left: vw(35);
+			padding-right: vw(35);
 		}
 	}
 	&__test{
