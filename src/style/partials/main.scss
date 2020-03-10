@@ -158,6 +158,9 @@ body{
 		line-height: vw(26);
 		letter-spacing: vw(0.55);
 		cursor: pointer;
+		min-height: vw(50);
+		display: flex;
+		align-items: center;
 	}
 	&__btns{
 		position: absolute;
@@ -297,6 +300,7 @@ body{
 			font-size: vw2(22);
 			line-height: vw2(26);
 			letter-spacing: vw2(0.55);
+			min-height: vw2(50);
 		}
 		&__btns{
 			position: static;
