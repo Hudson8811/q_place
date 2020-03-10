@@ -85,10 +85,12 @@ body{
 		color: #FFFFFF;
 		width: vw(48);
 		height: vw(48);
+		padding: 0;
 		svg{
 			width: vw(30);
 			height: vw(30);
 			display: block;
+			margin: 0 auto;
 		}
 		&:hover{
 			color: #000000;
@@ -306,6 +308,11 @@ body{
 			font-size: vw2(47);
 			border-radius: vw2(50);
 			border: none;
+			&_auto{
+				height: auto;
+				padding-top: vw2(15);
+				padding-bottom: vw2(15);
+			}
 		}
 		&__test{
 			padding: vw2(65) vw2(40) vw2(65);
